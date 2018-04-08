@@ -12,6 +12,9 @@ class CaveJohnson {
     }
     
     public function getRandom($amount = 1) {
+        if ($amount == 1) {
+            return $this->localRandom();
+        }
         $keys = array_rand($this->json, $amount);
         $results = array();
         foreach ($keys as $key) {
@@ -26,5 +29,8 @@ class CaveJohnson {
     
     public function getByName($name) {
         return $this->json[$name];
+    }
+    private function localRandom() {
+        return json_decode(file_get_contents($this->url . "random/json"), true);
     }
 }

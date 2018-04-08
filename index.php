@@ -12,3 +12,4 @@ foreach($johnson->getRandom(2) as $rand) {
     echo "<img src='" . urldecode($rand['encoded']) . "'></img>";
 }
 
+echo "<img src='" . urldecode($johnson->getRandom()['encoded']) . "'></img>";
