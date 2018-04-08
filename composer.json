@@ -1,0 +1,12 @@
+{
+    "name": "bennetgallein/cave-johnson-wrapper",
+    "description": "A Wrapper for the Cave Johnson API to get cool Profile Pics",
+    "type": "library",
+    "authors": [
+        {
+            "name": "bennetgallein",
+            "email": "bennet@intranetproject.net"
+        }
+    ],
+    "require": {}
+}
