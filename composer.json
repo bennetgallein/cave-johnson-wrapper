@@ -8,5 +8,10 @@
             "email": "bennet@intranetproject.net"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CaveJohnson\\": "src/"
+        }
+    }
 }
